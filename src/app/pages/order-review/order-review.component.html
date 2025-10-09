@@ -1,0 +1,31 @@
+<div class="po-row">
+  <div class="po-md-12 po-font-title">Pedidos</div>
+</div>
+<po-table p-container="shadow" [p-hide-table-search]="false" [p-height]="orderId ? 200 : 0"
+  [p-hide-columns-manager]="true" [p-loading-show-more]="isLoading" [p-columns]="columns" [p-items]="items"
+  [p-sort]="true">
+
+  <ng-template p-table-column-template [p-property]="action" let-value>
+    <po-button p-icon="an an-eye" p-kind="tertiary" (p-click)="fetchOrdersById(value)"> </po-button>
+  </ng-template>
+
+</po-table>
+
+@if(orderId){
+<hr class="po-md-12" />
+<div class="po-row">
+  <div class="po-md-4">
+    <div class="po-font-text-large-bold po-text-color-neutral-dark-40">Lista dos itens do pedido #{{orderId}}</div>
+  </div>
+  <div class="po-md-8 po-lg-6 po-xl-4 po-mb-2 po-offset-lg-2 po-offset-xl-4">
+    <div class="po-row" style="justify-content: right;">
+      <po-button-group [p-buttons]="buttons"> </po-button-group>
+      <po-button class="po-ml-2" p-icon="an an-x" (p-click)="closeDetails()"> </po-button>
+    </div>
+  </div>
+</div>
+
+<po-table p-container="shadow" [p-height]="500" [p-hide-columns-manager]="true" [p-loading-show-more]="isLoading"
+  [p-columns]="columnsDetails" [p-items]="itemsDetails" [p-sort]="true">
+</po-table>
+}
