@@ -21,7 +21,6 @@ import { OrderReviewService } from '../../core/service/order-review/order-review
 export class OrderReviewComponent implements OnInit {
   public columns: Array<PoTableColumn> = [
     { property: 'idPedido', label: '#' },
-    { property: 'filial', label: 'Filial' },
     { property: 'numero', label: 'Número' },
     { property: 'cliente', label: 'Cliente' },
     { property: 'emissao', label: 'Emissão' },

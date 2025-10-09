@@ -32,7 +32,6 @@ export class OrderReviewService {
 
 
 export interface Order {
-  filial: string;
   numero: string;
   cliente: string;
   emissao: string;

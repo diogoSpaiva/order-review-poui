@@ -1,7 +1,6 @@
 {
   "ListPedido": [
     {
-      "filial": "01CF0049",
       "numero": "000457",
       "cliente": "000028",
       "emissao": "08/07/2013",
@@ -17,7 +16,6 @@
       "ultimototal": "10.000,00"
     },
     {
-      "filial": "01CF0049",
       "numero": "000827",
       "cliente": "000029",
       "emissao": "31/03/2015",
@@ -33,7 +31,6 @@
       "ultimototal": "110,00"
     },
     {
-      "filial": "01CF0049",
       "numero": "000987",
       "cliente": "002258",
       "emissao": "17/04/2016",
@@ -49,7 +46,6 @@
       "ultimototal": "0"
     },
     {
-      "filial": "01CF0049",
       "numero": "000988",
       "cliente": "002259",
       "emissao": "21/04/2016",
@@ -65,7 +61,6 @@
       "ultimototal": "0"
     },
     {
-      "filial": "01CF0049",
       "numero": "000989",
       "cliente": "002260",
       "emissao": "18/04/2016",
@@ -81,7 +76,6 @@
       "ultimototal": "0"
     },
     {
-      "filial": "01CF0049",
       "numero": "000990",
       "cliente": "002199",
       "emissao": "05/04/2016",
@@ -97,7 +91,6 @@
       "ultimototal": "2,00"
     },
     {
-      "filial": "01CF0049",
       "numero": "000991",
       "cliente": "002199",
       "emissao": "05/04/2016",
@@ -113,7 +106,6 @@
       "ultimototal": "2,00"
     },
     {
-      "filial": "01CF0049",
       "numero": "000992",
       "cliente": "002199",
       "emissao": "05/04/2016",
@@ -129,7 +121,6 @@
       "ultimototal": "2,00"
     },
     {
-      "filial": "01CF0049",
       "numero": "000993",
       "cliente": "002199",
       "emissao": "05/04/2016",
@@ -145,7 +136,6 @@
       "ultimototal": "2,00"
     },
     {
-      "filial": "01CF0049",
       "numero": "000994",
       "cliente": "002200",
       "emissao": "06/04/2016",
@@ -161,7 +151,6 @@
       "ultimototal": "0"
     },
     {
-      "filial": "01CF0049",
       "numero": "000996",
       "cliente": "002202",
       "emissao": "06/04/2016",
@@ -177,7 +166,6 @@
       "ultimototal": "0"
     },
     {
-      "filial": "01CF0049",
       "numero": "000999",
       "cliente": "002205",
       "emissao": "08/04/2016",
@@ -193,7 +181,6 @@
       "ultimototal": "0"
     },
     {
-      "filial": "01CF0049",
       "numero": "001000",
       "cliente": "002206",
       "emissao": "08/04/2016",
@@ -209,7 +196,6 @@
       "ultimototal": "0"
     },
     {
-      "filial": "01CF0049",
       "numero": "001004",
       "cliente": "002210",
       "emissao": "08/04/2016",
@@ -225,7 +211,6 @@
       "ultimototal": "0"
     },
     {
-      "filial": "01CF0049",
       "numero": "001005",
       "cliente": "002211",
       "emissao": "08/04/2016",
