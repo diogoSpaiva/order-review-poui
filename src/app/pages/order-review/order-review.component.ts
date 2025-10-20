@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { PoBreadcrumbModule, PoButtonGroupItem, PoButtonGroupModule, PoButtonModule, PoInfoModule, PoNotificationService, PoTableColumn, PoTableModule, PoTagModule, PoTagType } from '@po-ui/ng-components';
 import { OrderReviewService } from '../../core/service/order-review/order-review.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-order-review',
@@ -14,6 +15,8 @@ import { OrderReviewService } from '../../core/service/order-review/order-review
     PoButtonModule,
     PoBreadcrumbModule,
     PoButtonGroupModule,
+    
+    HttpClientModule
   ],
   templateUrl: './order-review.component.html',
   styleUrl: './order-review.component.scss'

@@ -1,16 +1,25 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { OrderReviewComponent } from '../../../pages/order-review/order-review.component';
 
-import { OrderReviewService } from './order-review.service';
+describe('OrderReviewComponent', () => {
+  let component: OrderReviewComponent;
+  let fixture: ComponentFixture<OrderReviewComponent>;
 
-describe('OrderReviewService', () => {
-  let service: OrderReviewService;
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [
+        OrderReviewComponent,
+        HttpClientTestingModule
+      ],
+    }).compileComponents();
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(OrderReviewService);
+    fixture = TestBed.createComponent(OrderReviewComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  it('should create', () => {
+    expect(component).toBeTruthy();
   });
 });
