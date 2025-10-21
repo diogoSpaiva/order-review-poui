@@ -11,7 +11,9 @@ import { httpInterceptor } from './core/interceptor/http.interceptor';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
+    provideHttpClient(),
     importProvidersFrom([PoHttpRequestModule]),
+    { provide: "Window", useValue: window },
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(withInterceptors([httpInterceptor])),
   ],

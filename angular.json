@@ -24,13 +24,13 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "./node_modules/@po-ui/style/css/po-theme-default.min.css",
+              "./node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
+              "./node_modules/@totvs/po-theme/css/po-theme-default.min.css",
+              "./node_modules/@po-ui/style/css/po-theme-core.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -81,13 +81,13 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "./node_modules/@po-ui/style/css/po-theme-default.min.css",
+              "./node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
+              "./node_modules/@totvs/po-theme/css/po-theme-default.min.css",
+              "./node_modules/@po-ui/style/css/po-theme-core.min.css",
               "src/styles.scss"
             ],
             "scripts": []

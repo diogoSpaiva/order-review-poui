@@ -1,13 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { PoPageModule } from '@po-ui/ng-components';
+
+import { ProtheusLibCoreModule, ProAppConfigService } from "@totvs/protheus-lib-core"
 
 @Component({
   selector: 'app-root',
   imports: [
     CommonModule,
     PoPageModule,
+    ProtheusLibCoreModule,
 
     RouterOutlet,
   ],
@@ -17,4 +20,14 @@ import { PoPageModule } from '@po-ui/ng-components';
       </po-page-default>
     `,
 })
-export class AppComponent { }
+export class AppComponent {
+  constructor(private proAppConfigService: ProAppConfigService, private router: Router) {
+    if (!this.proAppConfigService.insideProtheus()) {
+      this.proAppConfigService.loadAppConfig();
+      sessionStorage.setItem("insideProtheus", "0");
+      sessionStorage.setItem("ERPTOKEN", "");
+    } else {
+      sessionStorage.setItem("insideProtheus", "1");
+    }
+  }
+}
